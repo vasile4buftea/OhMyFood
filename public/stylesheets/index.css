@@ -12,6 +12,7 @@ body {
 }
 
 header img {
+  
   width: 100%;
 }
 
@@ -30,6 +31,10 @@ h3 {
   display: flex;
   flex-direction: row;
 }
+.full-palette-cover {
+position: absolute;
+z-index: -1;
+}
 .full-palette-title {
   width: 90%;
   display: flex;
@@ -44,6 +49,9 @@ h3 {
   margin: 1em 0 1em 1em;
 }
 .full-palette-menu {
+  position: relative;
+    z-index: 2;
+    margin-top: 25vh;
   width: 359px;
   background-color: #F2F2F2;
   border: medium solid #F2F2F2;
@@ -72,6 +80,14 @@ h3 {
   background-color: #fff;
   border: medium solid #fff;
   border-radius: 15px;
+}
+.for-euro {
+  display: flex;
+  flex-direction: row;
+}
+.cost {
+  display: flex;
+  align-self: flex-end;
 }
 
 
