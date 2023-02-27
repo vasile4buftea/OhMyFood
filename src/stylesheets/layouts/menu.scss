@@ -437,7 +437,16 @@ p {
 
 footer h2 {
   margin: 0;
-  padding-top: 30px;
+  padding: 18px 0 15px 0;
+  font-size: 1.1em;
+  color: #f2f2f2;
+}
+footer p {
+  margin: 0.3em;
+  color: #f2f2f2;
+}
+footer i {
+  font-size: 0.8em;
 }
 
 .location {
@@ -640,4 +649,21 @@ footer h2 {
   bottom: -3px;
   right: 0px;
   border: 5px solid #f2f2f2;
+}
+
+.for-order-button {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.for-order-button button {
+  width: 55%;
+  height: 3.4em;
+}
+
+.spinner i {
+ width: 300px;
+  color: #9356dc;
 }
