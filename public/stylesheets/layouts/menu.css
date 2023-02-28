@@ -90,8 +90,8 @@ h4 {
   z-index: 2;
   margin-top: 25vh;
   width: 359px;
-  background-color: #F2F2F2;
-  border: medium solid #F2F2F2;
+  background-color: #f2f2f2;
+  border: medium solid #f2f2f2;
   border-radius: 35px 35px 0 0;
   padding: 0 10px 50px 15px;
 }
@@ -203,6 +203,11 @@ h4 {
   opacity: 1;
 }
 
+.heartAnim:active > .fa-regular {
+  opacity: 0;
+  transition: opacity 2.5s;
+}
+
 .heartAnim {
   display: flex;
   justify-content: center;
@@ -286,13 +291,36 @@ h4 {
   margin: 15px 0;
 }
 
-.menu-list {
+.card-menu-wrapper:nth-child(2) {
   opacity: 0;
 }
 
-.menu-list:hover {
+.card-menu-wrapper:nth-child(2) {
   opacity: 1;
-  animation: fadeIn 1s;
+  animation: fadeIn 2s 1;
+}
+
+.card-menu-wrapper:nth-child(3) {
+  opacity: 0;
+}
+
+.card-menu-wrapper:nth-child(3) {
+  opacity: 1;
+  animation: fadeIn 2.5s;
+}
+
+.card-menu-wrapper:nth-child(4) {
+  opacity: 0;
+}
+
+.card-menu-wrapper:nth-child(4) {
+  opacity: 1;
+  animation: fadeIn 2.75s;
+}
+
+.card-menu-wrapper:nth-child(2) {
+  opacity: 1;
+  animation: fadeIn 2s 1;
 }
 
 .menu-list:-moz-loading > .card-menu-wrapper {
@@ -362,8 +390,8 @@ h4 {
   z-index: 2;
   margin-top: 25vh;
   width: 359px;
-  background-color: #F2F2F2;
-  border: medium solid #F2F2F2;
+  background-color: #f2f2f2;
+  border: medium solid #f2f2f2;
   border-radius: 35px 35px 0 0;
   background-color: #fff;
   width: 90%;
@@ -506,7 +534,7 @@ footer i {
 }
 
 .how-it-works button:hover {
-  background-color: rgba(234, 241, 251, 0.7019607843);
+  background-color: hsla(254deg, 68%, 95%, 0.702);
   box-shadow: 0px 3px 10px 3px rgba(202, 209, 220, 0.7019607843);
 }
 
@@ -534,6 +562,10 @@ footer i {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+}
+
+.button-with-dot:hover > button i {
+  color: #9356dc !important;
 }
 
 .how-it-works {
@@ -633,5 +665,36 @@ footer i {
   width: 300px;
   color: #9356dc;
 }
+
+@media (min-width: 768px) {
+  main,
+  .homepage-title,
+  .explore-restaurants,
+  .how-it-works {
+    padding: 0vw 30vw;
+  }
+  .menu-cover {
+    height: 200vh;
+  }
+  .menu-cover img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .homepage-container {
+    background-color: white;
+  }
+}
+@media (min-width: 1600px) {
+  main,
+  .homepage-title,
+  .explore-restaurants,
+  .how-it-works {
+    padding: 0vw 35vw;
+  }
+  .homepage-container {
+    background-color: white;
+  }
+}
+/*# sourceMappingURL=menu.css.map */
 
 /*# sourceMappingURL=menu.css.map */
