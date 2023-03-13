@@ -12,6 +12,21 @@
   width: 100%;
 }
 
+.Tag--new {
+  position: absolute;
+  text-decoration: none;
+  z-index: 2;
+  left: 73%;
+  top: 4%;
+  font-family: "Roboto";
+  font-weight: 500;
+  background-color: #99e2d0;
+  color: #0a8d6d;
+  font-size: 1em;
+  padding: 0.4em 1.6em;
+  border-radius: 0.25em;
+}
+
 body {
   text-decoration-line: none;
   margin: 0px;

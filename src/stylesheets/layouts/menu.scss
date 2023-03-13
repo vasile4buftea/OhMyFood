@@ -12,6 +12,22 @@
   width: 100%;
 }
 
+.Tag--new {
+  position: absolute;
+  text-decoration: none;
+  z-index: 2;
+  left: 73%;
+  top: 4%;
+  font-family: 'Roboto';
+  font-weight: 500;
+
+  background-color: #99e2d0;
+  color: #0a8d6d;
+  font-size: 1em;
+  padding: 0.4em 1.6em;
+  border-radius: 0.25em;
+}
+
 body {
   text-decoration-line: none;
   margin: 0px;
@@ -198,12 +214,13 @@ h4 {
   opacity: 0;
 }
 
-.fa-heart:active + .fa-heart--red {
+.fa-heart:active+.fa-heart--red {
   animation: fill-up 1.25s ease-in-out;
   background-image: linear-gradient(#9356dc, #ff79da);
   opacity: 1;
 }
-.heartAnim:active > .fa-regular {
+
+.heartAnim:active>.fa-regular {
   opacity: 0;
   transition: opacity 2.5s;
 }
@@ -305,6 +322,7 @@ h4 {
   opacity: 1;
   animation: fadeIn 2s 1;
 }
+
 .card-menu-wrapper:nth-child(3) {
   opacity: 0;
 }
@@ -317,6 +335,7 @@ h4 {
 .card-menu-wrapper:nth-child(4) {
   opacity: 0;
 }
+
 .card-menu-wrapper:nth-child(4) {
   opacity: 1;
   animation: fadeIn 2.75s;
@@ -327,7 +346,7 @@ h4 {
   animation: fadeIn 2s 1;
 }
 
-.menu-list:-moz-loading > .card-menu-wrapper {
+.menu-list:-moz-loading>.card-menu-wrapper {
   animation: fadeIn 5s;
 }
 
@@ -368,7 +387,7 @@ h4 {
   transition-delay: 0.75s;
 }
 
-.card-menu:hover + .tick-wrapper {
+.card-menu:hover+.tick-wrapper {
   animation: slide-left 0.75s ease-in-out;
   transform: translateX(0);
 }
@@ -387,7 +406,7 @@ h4 {
   }
 }
 
-.card-menu:hover + .tick-wrapper > .check-white {
+.card-menu:hover+.tick-wrapper>.check-white {
   transform: rotate(0deg);
   transition: transform ease-in-out 0.5s;
   transition-delay: 0.25s;
@@ -459,10 +478,12 @@ footer h2 {
   font-size: 1.1em;
   color: #f2f2f2;
 }
+
 footer p {
   margin: 0.3em;
   color: #f2f2f2;
 }
+
 footer i {
   font-size: 0.8em;
 }
@@ -571,7 +592,7 @@ footer i {
   justify-content: flex-start;
 }
 
-.button-with-dot:hover > button i {
+.button-with-dot:hover>button i {
   color: #9356dc !important;
 }
 
@@ -662,6 +683,7 @@ footer i {
   justify-content: center;
   margin-top: 60px;
 }
+
 .for-order-button button {
   width: 55%;
   height: 3.4em;
@@ -673,31 +695,37 @@ footer i {
 }
 
 @media (min-width: 768px) {
+
   main,
   .homepage-title,
   .explore-restaurants,
   .how-it-works {
     padding: 0vw 30vw;
   }
+
   .menu-cover {
     height: 200vh;
   }
+
   .menu-cover img {
     height: 100%;
     object-fit: cover;
   }
+
   .homepage-container {
     background-color: white;
   }
 }
 
 @media (min-width: 1600px) {
+
   main,
   .homepage-title,
   .explore-restaurants,
   .how-it-works {
     padding: 0vw 35vw;
   }
+
   .homepage-container {
     background-color: white;
   }
