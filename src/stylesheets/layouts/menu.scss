@@ -51,10 +51,12 @@
 
   animation: disappear 3s 1 ease-in-out;
   visibility:hidden;
+  left:40%;
+  top:-10%
 }
 
 
-.homepage-container {
+.lazy-load {
   animation: disappear 3s 1 reverse;
 }
 
@@ -279,13 +281,15 @@ h4 {
   opacity: 0;
 }
 
-.fa-heart:active+.fa-heart--red {
+.fa-heart:active+.fa-heart--red,
+.fa-heart:hover+.fa-heart--red {
   animation: fill-up 1.25s ease-in-out;
   background-image: linear-gradient(#9356dc, #ff79da);
   opacity: 1;
 }
 
-.heartAnim:active>.fa-regular {
+.heartAnim:active>.fa-regular,
+.heartAnim:hover>.fa-regular {
   opacity: 0;
   transition: opacity 2.5s;
 }
@@ -380,56 +384,24 @@ h4 {
 }
 
 .card-menu-wrapper:nth-child(2) {
-  opacity: 0;
-}
-
-.card-menu-wrapper:nth-child(2) {
   opacity: 1;
-  animation: fadeIn 2s 1;
-}
-
-.card-menu-wrapper:nth-child(3) {
-  opacity: 0;
+  animation: fadeIn 3s 1;
 }
 
 .card-menu-wrapper:nth-child(3) {
   opacity: 1;
-  animation: fadeIn 2.5s;
-}
-
-.card-menu-wrapper:nth-child(4) {
-  opacity: 0;
+  animation: fadeIn 4.5s 1;
 }
 
 .card-menu-wrapper:nth-child(4) {
   opacity: 1;
-  animation: fadeIn 2.75s;
-}
-
-.card-menu-wrapper:nth-child(2) {
-  opacity: 1;
-  animation: fadeIn 2s 1;
+  animation: fadeIn 5s 1;
 }
 
 .menu-list:-moz-loading>.card-menu-wrapper {
   animation: fadeIn 5s;
 }
 
-.menu-list .card-menu-wrapper:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.menu-list .card-menu-wrapper:nth-child(2) {
-  animation-delay: 1s;
-}
-
-.menu-list .card-menu-wrapper:nth-child(3) {
-  animation-delay: 1.5s;
-}
-
-.menu-list .card-menu-wrapper:nth-child(4) {
-  animation-delay: 2s;
-}
 
 @keyframes fadeIn {
   0% {
