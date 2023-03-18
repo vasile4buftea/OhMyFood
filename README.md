@@ -1,2 +1,2 @@
 # OhMyFood
-[https://github.com/vasile4buftea/OhMyFood.git]
+{https://github.com/vasile4buftea/OhMyFood.git}
