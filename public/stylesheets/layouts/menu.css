@@ -87,6 +87,7 @@
 body {
   text-decoration-line: none;
   margin: 0px;
+  min-width: 320px;
 }
 
 header img {
